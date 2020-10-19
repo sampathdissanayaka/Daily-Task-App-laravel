@@ -16,7 +16,19 @@
                <br>
                <input type="button" class="btn btn-primary" value="SAVE">
                <input type="button" class="btn btn-warning" value="CLEAR">
-    
+
+               <table class="table table-hover table-dark">
+                  <th>ID</th>
+                  <th>Task</th>
+                  <th>Completed</th>
+                    <tr>
+                      <td>1</td>
+                      <td>I have a lecture today</td>
+                      <td>Not Yet</td>
+                    </tr>
+
+               
+               </table>
          </div>
        </div>
 
