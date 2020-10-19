@@ -10,13 +10,8 @@ Route::get('/', function () {
 });
 
 
-
-Route ::get('/login',function(){
-    echo "welcome to laravel!";
-});
-
-Route::get('/about','App\Http\Controllers\PagesController@indexaboutus');
-
 Route::get('/task',function(){
     return view('task');
 });
+
+Route::post('/saveTask','App\Http\Controllers\TaskController@store');
