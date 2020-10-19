@@ -12,6 +12,15 @@
     <h1> Daily Tasks</h1>
       <div class="row">
          <div class="col-md-12">
+
+         @foreach($errors->all() as $error)
+
+         <div class="alert alert-danger" role="alert">
+            {{$error}}
+         </div>
+
+         @endforeach
+
            <form method="POST" action="/saveTask">
            {{csrf_field()}}
              <input type="text" class="form-control" name="task" placeholder="Enter Your Task Here">
@@ -23,11 +32,22 @@
                   <th>ID</th>
                   <th>Task</th>
                   <th>Completed</th>
+
+                  @foreach($tasks as $task)
                     <tr>
-                      <td>1</td>
-                      <td>I have a lecture today</td>
-                      <td>Not Yet</td>
+                      <td>{{$task->id}}</td>
+                      <td>{{$task->task}}</td>
+                      <td>
+                      
+                         @if($task->iscompleted)
+                         <button class="btn btn-success">Completed</button>
+                         @else
+                         <button class="btn btn-warning">Not Completed</button>
+                        @endif
+
+                      </td>
                     </tr>
+                    @endforeach
 
                
                </table>
