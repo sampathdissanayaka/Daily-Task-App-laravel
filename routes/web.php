@@ -16,3 +16,7 @@ Route ::get('/login',function(){
 });
 
 Route::get('/about','App\Http\Controllers\PagesController@indexaboutus');
+
+Route::get('/task',function(){
+    return view('task');
+});
