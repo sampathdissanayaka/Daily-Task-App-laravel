@@ -7,6 +7,7 @@ use App\Models\Task;
 
 class TaskController extends Controller
 {
+   
     public function store(Request $request){
 
 
@@ -27,6 +28,15 @@ class TaskController extends Controller
 
        return view('task')->with('tasks',$data);
        //return redirect()->back();
+
+      
+    }
+
+    public function UpdateTaskAsCompleted($id){
+        $task=Task::find($id);
+        $task->iscompleted=1;
+        $task->save();
+        return redirect()->back();
     }
    
 }
