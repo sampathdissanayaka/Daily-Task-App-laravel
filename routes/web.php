@@ -16,3 +16,5 @@ Route::get('/task',function(){
 });
 
 Route::post('/saveTask','App\Http\Controllers\TaskController@store');
+
+Route::get('/markascompleted','App\Http\Controllers\TaskController@UpdateTaskAsCompleted');
