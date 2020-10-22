@@ -33,7 +33,7 @@ class TaskController extends Controller
     }
 
     public function UpdateTaskAsCompleted($id){
-        $task=Task::find($id);
+        $task=Task/*model*/::find($id);
         $task->iscompleted=1;
         $task->save();
         return redirect()->back();
