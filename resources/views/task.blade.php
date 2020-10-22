@@ -47,7 +47,7 @@
                         @endif
                       </td>
                       <td>
-                          <a href="#" class="btn btn-primary">Mark As Completed</a>
+                          <a href="/markascompleted/{{$task->id}}" class="btn btn-primary">Mark As Completed</a>
                       </td>
                     </tr>
                     @endforeach
