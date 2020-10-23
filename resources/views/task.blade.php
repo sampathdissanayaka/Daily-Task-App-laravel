@@ -56,6 +56,7 @@
                           @endif
 
                           <a href="/deletetask/{{$task->id}}" class="btn btn-warning">Delete</a>
+                          <a href="/updatetask/{{$task->id}}" class="btn btn-success">Update</a>
                       </td>
                       
                     </tr>
