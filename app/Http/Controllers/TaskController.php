@@ -52,5 +52,12 @@ class TaskController extends Controller
         $task->delete();
         return redirect()->back();
     }
+
+    public function UpdateTaskView($id){
+       
+        $task=Task::find($id);
+
+        return view('updatetask')->with('taskdata',$task);
+    }
    
 }
