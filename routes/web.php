@@ -24,3 +24,5 @@ Route::get('/markasnotcompleted/{id}','App\Http\Controllers\TaskController@Updat
 Route::get('/deletetask/{id}','App\Http\Controllers\TaskController@DeleteTask');
 
 Route::get('/updatetask/{id}','App\Http\Controllers\TaskController@UpdateTaskView');
+
+Route::post('/updatetasks','App\Http\Controllers\TaskController@UpdateTask');
