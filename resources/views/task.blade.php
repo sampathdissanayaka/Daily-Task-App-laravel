@@ -9,7 +9,7 @@
 <body>
     <div class="container">
     <div class="text-center">
-    <h1> Daily Tasks</h1>
+    <h1>DAILY TASKS</h1>
       <div class="row">
          <div class="col-md-12">
 
